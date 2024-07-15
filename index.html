@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Aventura de los Gatos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .story-section {
+      display: none;
+    }
+
+    .cat-img {
+      height: 300px; 
+      width: 250px;
+    }
+
+    .cat-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Media query para pantallas pequeñas (< 768px) */
+    @media (max-width: 767px) {
+      body {
+        background-color: #f8f9fa;
+      }
+      .small-screen {
+        display: block !important;
+      }
+    }
+
+    /* Media query para pantallas medianas (>= 768px y < 992px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+      body {
+        background-color: #e9ecef;
+      }
+      .medium-screen {
+        display: block !important;
+      }
+    }
+
+    /* Media query para pantallas grandes (>= 992px) */
+    @media (min-width: 992px) {
+      body {
+        background-color: #dee2e6;
+      }
+      .large-screen {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">La Aventura de los Gatos</h1>
+    <p class="lead">Una historia mágica que cambia con el tamaño de tu pantalla.</p>
+    
+    <!-- Historia para pantallas pequeñas -->
+    <div class="story-section small-screen">
+      <h2>El Comienzo de la Aventura</h2>
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="./assets/img/gato_pirata.png" alt="GatSparrow" class="img-fluid cat-img">
+          <p class="cat-name">GatSparrow</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <p class="text-center h2">Érase una vez, un valiente gato pirata llamado GatSparrow que navegaba los siete mares en busca de aventuras y tesoros escondidos.</p>
+          <p class="text-center h2">En su barco, llamado "El Holandés Ronroneante", descubrió un mapa antiguo que señalaba la ubicación de un misterioso reino.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Historia para pantallas medianas -->
+    <div class="story-section medium-screen">
+      <h2>El Encuentro con el Caballero</h2>
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="./assets/img/gato_pirata.png" alt="GatSparrow" class="img-fluid cat-img">
+          <p class="cat-name">GatSparrow</p>
+        </div>
+        <div class="col">
+          <img src="./assets/img/gato_caballero.png" alt="Sir Catcelot" class="img-fluid cat-img">
+          <p class="cat-name">Sir Catcelot</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <p class="text-center h2">Siguiendo el mapa, GatSparrow llegó a un reino lejano donde conoció a un noble gato caballero llamado Sir Catcelot.</p>
+          <p class="text-center h2">Sir Catcelot, impresionado por la valentía de GatSparrow, decidió unirse a su búsqueda del tesoro perdido.</p>
+          <p class="text-center h2">Juntos, enfrentaron numerosos desafíos, luchando contra dragones y rescatando aldeanos en apuros.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Historia para pantallas grandes -->
+    <div class="story-section large-screen">
+      <h2>El Poder del Mago</h2>
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="./assets/img/gato_pirata.png" alt="GatSparrow" class="img-fluid cat-img">
+          <p class="cat-name">GatSparrow</p>
+        </div>
+        <div class="col">
+          <img src="./assets/img/gato_caballero.png" alt="Sir Catcelot" class="img-fluid cat-img">
+          <p class="cat-name">Sir Catcelot</p>
+        </div>
+        <div class="col">
+          <img src="./assets/img/gato_mago.png" alt="Mago Meowlin" class="img-fluid cat-img">
+          <p class="cat-name">Mago Meowlin</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <p class="text-center h2">En su viaje, GatSparrow y Sir Catcelot llegaron a un bosque encantado donde encontraron a un sabio gato mago llamado Mago Meowlin.</p>
+          <p class="text-center h2">Mago Meowlin, al ver el coraje y la determinación de GatSparrow y Sir Catcelot, decidió ayudarlos con su magia.</p>
+          <p class="text-center h2">Con su ayuda, lograron encontrar el tesoro escondido y devolver la paz y prosperidad al reino.</p>
+          <p class="text-center h2">Y así, GatSparrow, Sir Catcelot y Mago Meowlin se convirtieron en leyendas, recordados por sus heroicas hazañas y su inquebrantable amistad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
